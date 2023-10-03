@@ -130,47 +130,54 @@ int main()
 {
 	int opcao=0; //Definindo variáveis
 	int laco=1;
+
 	
-	for(laco=1;laco=1;)//Função que repete o menu ao final de um processo
-	{
+		
+	  for(laco=1;laco=1;)//Função que repete o menu ao final de um processo
+	  {
 	
 	
-	    setlocale(LC_ALL, "Portuguese");//Definindo a linguagem
+	      setlocale(LC_ALL, "Portuguese");//Definindo a linguagem
 	
-	    printf("### Cartório da EBAC ###\n\n"); // inicio do menu
-     	printf("Escolha a opção desejada do menu:\n\n");
-	    printf("\t1 - Registro nomes\n");
-     	printf("\t2 - Consulta nomes\n");
-    	printf("\t3 - Deletar nomes\n\n");
-       	printf("Esse Software é de livre uso dos alunos\n\n");
-    	printf("Opção: ");
+	      printf("### Cartório da EBAC ###\n\n"); // inicio do menu
+     	  printf("Escolha a opção desejada do menu:\n\n");
+	      printf("\t1 - Registro nomes\n");
+     	  printf("\t2 - Consulta nomes\n");
+          printf("\t3 - Deletar nomes\n\n");
+          printf("\t4 - Sair do sistema");
+       	  printf("Esse Software é de livre uso dos alunos\n\n");
+    	  printf("Opção: ");
 	
-	    scanf("%d", &opcao); //armazenando a escolha do usuário
+	      scanf("%d", &opcao); //armazenando a escolha do usuário
 	    
-	    system("cls"); //Linpar tela
+	      system("cls"); //Linpar tela
 	    
-	    switch(opcao)//Função de escolha do munu
-	    {
-	    	case 1:
-	    	registro();
-	    	break;
+	      switch(opcao)//Função de escolha do munu
+	      {
+	    	  case 1:
+	    	  registro();
+	    	  break;
 	    	
-	    	case 2:
-	        consulta();
-	    	break;
+	    	  case 2:
+	          consulta();
+	    	  break;
 	    	
-	    	case 3:
-	    	deletar();
-	    	break;
+	    	  case 3:
+	    	  deletar();
+	    	  break;
+	    	  
+	    	  case 4:
+	    	  printf("Obrigado por ultilizar o sistema!\n");
+	    	  return 0;
+	    	  break;
 	    	
-	    	default:
-	    	printf("Essa opção não está disponivel\n");
-	    	system("pause");
-	    	break;
+	    	  default:
+	    	  printf("Essa opção não está disponivel\n");
+	    	  system("pause");
+	    	  break;
 	    	
-		}
-		    system("cls");
-	    
+		   }
+		      system("cls");
+       }
 	
-    } 
 }
