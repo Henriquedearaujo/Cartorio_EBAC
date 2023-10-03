@@ -130,7 +130,18 @@ int main()
 {
 	int opcao=0; //Definindo variáveis
 	int laco=1;
-
+	char senhadigitada[]="a";
+	int comparacao;
+	
+	printf("## Catório da EBAC ##\n\n");
+	printf("Login dae adminstrador!\n\nDigite a sua senha: ");
+	scanf("%s",senhadigitada);
+	
+	comparacao = strcmp(senhadigitada, "admin");
+	
+	if(comparacao == 0)
+	{
+		system("cls");
 	
 		
 	  for(laco=1;laco=1;)//Função que repete o menu ao final de um processo
@@ -167,9 +178,8 @@ int main()
 	    	  break;
 	    	  
 	    	  case 4:
-	    	  printf("Obrigado por ultilizar o sistema!\n");
+	    	  printf("Sair do sistema\n")
 	    	  return 0;
-	    	  break;
 	    	
 	    	  default:
 	    	  printf("Essa opção não está disponivel\n");
@@ -179,5 +189,7 @@ int main()
 		   }
 		      system("cls");
        }
-	
+	}
+	else 
+	    printf("Senha incorreta!");
 }
