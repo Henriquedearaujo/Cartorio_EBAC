@@ -178,7 +178,7 @@ int main()
 	    	  break;
 	    	  
 	    	  case 4:
-	    	  printf("Sair do sistema\n")
+	    	  printf("Sair do sistema\n");
 	    	  return 0;
 	    	
 	    	  default:
